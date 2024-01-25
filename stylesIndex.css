@@ -1,0 +1,433 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+/* Grand titre BanderSnatch */
+#titre1{ 
+	color:white;
+	text-shadow:0 0 4px black;
+	font-family:Impact, fantasy;
+	letter-spacing:5px;
+	width: 100%;
+	height: 80px;
+	margin-top: 0px;
+	text-align: center;
+}
+/* Sous-titre for a better life */
+#titre2{
+	color: white;
+	text-shadow:0 0 4px black;
+	text-align:center;
+	font-family:"Brush Script MT", "Brush Script Std", cursive;
+	letter-spacing:6px;
+}
+/* Logo BanderSnatch */
+#logo{	
+	right : 1%;
+	top :1%;
+	position:absolute;
+}
+/* Page principal */
+#menu{
+	background-image: linear-gradient(rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.45)),url("fond.jpg");
+	background-size: 100%;
+	padding-bottom:32%;
+	background-repeat: no-repeat;
+	border-bottom: solid 4px black;
+}
+/* Menu Carrousel */
+.content{
+	margin:auto;
+	width:190px;
+	perspective:1000px;
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+/* Menu Carrousel */
+.content-carousel{
+	width:100%;
+	position:absolute;
+	animation:rotar 10s infinite linear;
+	transform-style:preserve-3d;
+	margin-top:50px;
+}
+/* Arrêter la rotation du menu */
+.content-carousel:hover{
+	animation-play-state:paused;
+	cursor:pointer;
+}
+/* Animation d'agrandissement et de changement de couleur */
+.content-carousel figure:hover{
+	background-color: #CFCDCD ;
+	border: solid 1px #545151;	
+	height: 110px;
+	width: 145px;
+	font-size: 25px;
+}
+/* Ombre autour de la box lorsqu'on la survole */
+.shadow:hover{
+	color: white;
+	text-shadow:0 0 10px grey;
+}
+/* Contour des box */
+.content-carousel figure{
+	border:1px solid grey;
+	overflow:hidden;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius:10px;
+	box-shadow:0px 0px 20px 0px #000;
+}
+/* Degrès de placement des box afin qu'ils soient équitablement répartis */
+.content-carousel figure:nth-child(1){
+	transform:rotateY(0deg) translateZ(100px);
+}
+
+.content-carousel figure:nth-child(2){
+	transform:rotateY(90deg) translateZ(100px);
+}
+
+.content-carousel figure:nth-child(3){
+	transform:rotateY(180deg) translateZ(100px);
+}
+
+.content-carousel figure:nth-child(4){
+	transform:rotateY(270deg) translateZ(100px);
+}
+
+/* Effet de rotation */
+@keyframes rotar
+{
+	from
+	{
+		transform:rotateY(0deg);
+	}
+	to
+	{
+		transform:rotateY(360deg);
+	}
+}
+/* Changement effectué sur tous les liens */
+a{
+	text-decoration: none;
+	color: black;
+}
+/* Bloc de l'intro */
+#blocI{
+	background-color: #F3EFEF;
+	padding-bottom: 1%;
+	padding-top: 1%; }
+/* titre de l'intro */
+#titreI{
+	text-align: center;
+	font-size: 50px; 
+	color: #403D3D;
+	font-family: sans-serif;
+}
+/* titre de la présentation */
+#titreII{
+	text-align: center;
+	font-size: 50px; 
+	color: #403D3D;
+	font-family: sans-serif;
+}
+/* texte de l'intro */
+#texte1{
+	padding-left: 15%;
+	padding-right: 15%;
+	color: #645D5D;
+	text-align: center;
+	font-family: sans-serif;
+}
+/* Photo de la courbe */
+#courbe{
+	border: solid 2px black;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 5%;
+}
+/* Séparation entre Intro et Présentation */
+.trait{
+	width:80%;
+	border:1px solid #223400; 
+	margin-left:auto;
+	margin-right:auto;
+}
+/* texte de la présentation */
+#texte2{
+	padding-left: 15%;
+	padding-right: 15%;
+	color: #645D5D;
+	text-align: center;
+	font-family: sans-serif; }
+/* footer */
+#bas2{
+	padding-top: 3%;
+	background-color: #232429;
+	height: 4%;
+	width: 100%;
+	font-size: 13px;
+	font-family: sans-serif;
+	padding-bottom: 1%;
+}
+/* titre footer */
+.titreF{
+	text-align: center;
+	color: #DDD9D9;
+	margin: 0px;
+}
+/* texte footer */
+.texteF{
+	text-align: center;
+	color: white;
+}
+
+#blocEntreprise{
+	width:50%;
+}
+
+#blocContact{
+	width:50%;
+}
+
+#blocReseau{
+	width:50%;
+}
+
+#image{
+	box-sizing: border-box;
+	width:50%;
+}
+/* Savoir si le CSS est valide */
+#validite {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+#CSSvalide{
+	text-align: center;
+    width:50%;
+}
+
+#copyright{
+	text-align: center;
+	color: #F0F0F1;
+	font-size: 12px;
+	width:50%;
+	vertical-align: middle;
+}
+
+#scroll_to_top {
+	position: fixed;
+}
+
+#scroll_to_top img {
+	opacity: 0.5;
+	width: 50px;
+	border-radius: 4px;
+}
+
+#scroll_to_top img:hover {
+  opacity: 1.0;
+}
+
+.liens{
+	color:grey;
+}
+
+#textesources{
+	color:white;
+	padding-left:50px;
+}
+
+@media screen and (max-width: 900px) {
+	#titre1{
+  		font-size: 40px;
+  		padding-top: 25%;
+  	}
+
+  	#titre2{
+		font-size: 20px;
+		margin-top: -70px;
+	}
+
+	#logo{	
+		right:5px;
+		margin: 1%;
+		width:50px;
+	}
+
+	#scroll_to_top {
+		bottom: 20px; 
+		right: 20px;
+	}
+
+	#scroll_to_top img {
+		width: 30px;
+	}
+
+	#titreI{
+		font-size: 25px;
+	}
+
+	#titreII{
+		font-size: 25px;
+	}
+
+	.content-carousel figure{
+		width:100px;
+		height:60px;
+		padding-top : 20%;
+		margin-top: -50px;
+	}
+
+	a{
+		font-size: 15px;
+	}
+
+	#texte1{
+		margin: 0px;
+		font-size: 16px;
+	}
+
+	#courbe{
+		width:75%;
+		margin-top: 10%;
+	}
+
+	#espace{
+		font-size: 100%;
+	}
+
+	#texte2{
+		margin: 0px;
+		font-size: 16px;
+		padding-bottom: 15%;
+	}
+
+	.titreF{
+		font-size: 15px;
+		margin: 0px;
+	}
+
+	.texteF{
+		font-size: 10px;
+	}
+
+	#bas {
+		display : flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	
+	.bloc1{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#image{
+		padding-left: 20%;
+	}
+	#LogoIUT{
+		width:100px;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	#titre1{
+		font-size: 100px;
+		padding-top: 10%;
+	}
+
+	#titre2{
+		font-size: 35px;
+		margin-top: -50px;
+	}
+
+	#logo{	
+		right:10px;
+		margin: 1%;
+		width:110px;
+	}
+
+	#scroll_to_top {
+		bottom: 35px; 
+		right: 35px;
+	}
+
+	#scroll_to_top img{
+		width: 35px;
+	}
+
+	#titreI{
+		font-size: 50px;
+	}
+
+	#titreII{
+		font-size: 50px;
+	}
+
+	.content-carousel figure{
+		width:130px;
+		height:90px;
+		padding-top : 30%;
+		margin-top: 0%;
+	}
+
+	#texte1{
+		margin: 0px;
+		font-size: 30px;
+	}
+
+	#courbe{
+		width:28%;
+		margin-top: 3%;
+	}
+
+	#espace{
+		font-size: 38px;
+	}
+
+	#texte2{
+		margin: 0px;
+		font-size: 30px;
+		padding-bottom: 5%;
+	}
+
+	.titreF{
+		font-size: 35px;
+		margin: 0px;
+	}
+
+	.texteF{
+		font-size: 15px;
+	}
+
+	#bas {
+		display : flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.bloc1{
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+	}
+
+	#image{
+		padding-left: 15%;
+	}
+
+	#LogoIUT{
+		width:150px;
+	}
+}
